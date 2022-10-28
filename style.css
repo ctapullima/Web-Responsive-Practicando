@@ -53,3 +53,44 @@ header {
 #check {
     display: none;
 }
+
+/* RESPONSIVE */
+@media(max-width:768px) {
+
+    /* header */
+    .mostar-menu,
+    .esconder-menu {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #4d4d5c;
+        left: 0;
+        right:-100% ;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+        /* siempre colocar un transition  mejor efecto visual */
+    }
+
+    .menu a {
+        display: block;
+        /* utilizarlo en medias queries 768( si esta en linea cambia a bloque , uno encima del otro*/
+        padding: 20px;
+    }
+
+    .esconder-menu {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    #check:checked ⁓ .menu {
+        right: 0;
+    }
+}
