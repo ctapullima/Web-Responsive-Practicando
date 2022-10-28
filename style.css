@@ -14,13 +14,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
 }
 
 .logo {
     text-transform: uppercase;
     color: #6cc091;
     font-weight: 200;
+    /*  border: 1px solid rgb(0, 38, 255); */
 }
 
 /* aqui esta los link de navegacion */
@@ -30,6 +31,7 @@ header {
     text-decoration: none;
     padding: 0 10px;
     transition: 0.4s;
+
 }
 
 .mostar-menu,
@@ -38,10 +40,12 @@ header {
     cursor: pointer;
     display: none;
     transition: 0.4s;
+
 }
 
 .mostar-menu {
     order: 1;
+    /* para  que aparesca  primero el menu de hambuersa */
 }
 
 .menu a:hover,
@@ -52,6 +56,42 @@ header {
 
 #check {
     display: none;
+}
+
+/* BANNER */
+#banner {
+    padding: 0 50PX;
+    background-image: url(./images/banner1.jpg);
+    height: 45vh;
+    background-size: cover;
+    /*  sin esta muy distorsionado , lo pone nitido */
+    background-position: center;
+    /* colocar la imagen en el centro de enfocacion */
+}
+
+#banner::before {
+    content: "";
+    background: rgba(77, 77, 92, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 45vh;
+    left: 0;
+}
+.contenido-banner{
+    position: relative;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* la letra estaba arriba y luego se fue abajo */
+}
+.contenido-banner h3{
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px 0px;
+}
+.contenido-banner h3 span{
+    font-weight: 600;
 }
 
 /* RESPONSIVE */
@@ -69,7 +109,7 @@ header {
         height: 100vh;
         background: #4d4d5c;
         left: 0;
-        right:-100% ;
+        right: -100%;
         top: 0;
         text-align: center;
         padding: 100px 0px;
