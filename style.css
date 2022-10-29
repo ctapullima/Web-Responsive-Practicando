@@ -61,7 +61,7 @@ header {
 /* BANNER (se gestiona la imagen)  */
 #banner {
     padding: 0 50PX;
-    background-image: url(./images/banner1.jpg);
+    background-image: url(./images/banner.jpg);
     height: 45vh;
     /* tanaño de la pantalla */
     background-size: cover;
@@ -110,14 +110,64 @@ header {
     color: #fff;
     border: 1px solid #6cc091;
     padding: 20px 40px;
-    align-self: baseline;/* ocupa lo qu3e esta dentro del contenedor , si el cuadro es grande se achica al casi tamaño de la letra */
+    align-self: baseline;
+    /* ocupa lo qu3e esta dentro del contenedor , si el cuadro es grande se achica al casi tamaño de la letra */
     transition: all 0.4s;
 }
+
 .boton-empezar:hover {
-    background: #6cc09070;     /* aqui se  colo las sombritas dinamicas */
+    background: #6cc09070;
+    /* aqui se  colo las sombritas dinamicas */
 }
 
+/* personas */
+/* esta hacienod como el padre y englova a todo */
+#personas {
+    padding: 50px 50px;
+    /*  para que la web se vea opdenada , en la mismalinea */
+    display: flex;
+    /* flex automaticamente uno al lado de otro  */
+    justify-content: center;
+    text-align: center;
+}
 
+#personas img {
+    border-radius: 100%;
+}
+
+#personas div {
+    padding: 30px 30px;
+    /* adentra la imagen */
+}
+
+#personas div h4 {
+    color: #4d4d5c87;
+    font-size: 20px;
+    margin: 15px 0px;
+}
+
+#personas div p {
+    color: #4d4d5c87;
+    font-size: 18px;
+}
+
+.boton-saber-mas {
+    display: inline-block;
+    text-decoration: none;
+    color: #6cc091;
+    padding: 10px 30px;
+    /* parametros  usualmente */
+    border: 3px solid #6cc091;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: all 0.4s;
+}
+
+.boton-saber-mas:hover {
+    background: #6cc091;
+    color: #fff;
+    /*  es necesario para que cambie el color  */
+}
 
 /* RESPONSIVE */
 @media(max-width:768px) {
