@@ -58,17 +58,19 @@ header {
     display: none;
 }
 
-/* BANNER */
+/* BANNER (se gestiona la imagen)  */
 #banner {
     padding: 0 50PX;
     background-image: url(./images/banner1.jpg);
     height: 45vh;
+    /* tanaño de la pantalla */
     background-size: cover;
     /*  sin esta muy distorsionado , lo pone nitido */
     background-position: center;
     /* colocar la imagen en el centro de enfocacion */
 }
 
+/* se utiliza el selector before y se coloque  grise opaco */
 #banner::before {
     content: "";
     background: rgba(77, 77, 92, 0.6);
@@ -76,23 +78,46 @@ header {
     width: 100%;
     height: 45vh;
     left: 0;
+    /*  como  le falta con el cero le corta */
 }
-.contenido-banner{
+
+.contenido-banner {
     position: relative;
     color: #fff;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* la letra estaba arriba y luego se fue abajo */
+    justify-content: center;
+    /* la letra estaba arriba y luego se fue abajo */
 }
-.contenido-banner h3{
+
+/* SE MODIFICA LAS LETRAS */
+.contenido-banner h3 {
     font-size: 30px;
     font-weight: 400;
     padding: 10px 0px;
 }
-.contenido-banner h3 span{
+
+.contenido-banner h3 span {
+
     font-weight: 600;
+    /* ara que las letras se vean estiradas */
 }
+
+/* aki me modifica la palabra Empezar */
+.boton-empezar {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #6cc091;
+    padding: 20px 40px;
+    align-self: baseline;/* ocupa lo qu3e esta dentro del contenedor , si el cuadro es grande se achica al casi tamaño de la letra */
+    transition: all 0.4s;
+}
+.boton-empezar:hover {
+    background: #6cc09070;     /* aqui se  colo las sombritas dinamicas */
+}
+
+
 
 /* RESPONSIVE */
 @media(max-width:768px) {
