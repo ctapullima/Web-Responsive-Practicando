@@ -208,4 +208,9 @@ header {
     #check:checked ⁓ .menu {
         right: 0;
     }
+
+    /* PERSONAS */
+    #personas{
+        flex-direction: column;
+    }
 }
