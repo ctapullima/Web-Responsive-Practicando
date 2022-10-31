@@ -170,7 +170,77 @@ header {
 	text-align: center;
 	padding-bottom: 50px;
 }
-/* .boton-saber-mas */
+/* FORMUKARIO */
+#contacto {
+	/* la caja principal se podria decir  */
+	background: #6cc091;
+	padding: 50px 0px;
+	color: #fff;
+}
+#contacto h4 {
+	/* aqui se aliea el texto */
+	text-align: center;
+	font-size: 25px; /* crece el tamaño de la letra */
+	margin-bottom: 20px;
+}
+#contacto form {
+	/* aqui queda centrado todo el formualrio   */
+	max-width: 80%;
+	margin: 0 auto;
+}
+.datos-form {
+	display: flex;
+}
+.datos-form div {
+	padding: 10px;
+	flex: 1;
+}
+form label {
+	display: block; /* pasa uno arriba del otro  */
+    margin-bottom: 10px;
+}
+form input,
+form textarea{  /* nombre,email,mensaje */
+    background: #6cc091;
+    border-radius: 10px;/* linea bordeadsas e nombre,email,mensaje */
+    border: 2px solid #8dcca9;
+    padding: 10px 5px;
+    outline: 0;
+    color: #777;
+    width: 100%;
+}
+form input:focus,
+form textarea:focus{
+    border-color: #4bae77;
+    box-shadow: 0 0 0 1px #4bae77;
+}
+form input::placeholder,
+form textarea::placeholder{
+    color: #fff;
+}
+.mensaje{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.boton-formulario .boton-saber-mas{
+    display: block;
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    transition: 0.4s;
+}
+.boton-formuklario .boton-empezar:hover{
+    background: #4fa776ad;
+}
+
+/*FOOTER */
+footer{
+    background: #4d4d5c;
+    color: #cccccc4a;
+    text-align: center;
+    padding: 10px 0px;
+}
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
@@ -184,7 +254,7 @@ header {
 		width: 100%;
 		height: 100vh;
 		background: #4d4d5c;
-		left: 0;
+		/* left: 0; */
 		right: -100%;
 		top: 0;
 		text-align: center;
@@ -216,4 +286,10 @@ header {
 	.contenido-iconos div {
 		border: none;
 	}
+/* formulario */
+    .datos-form{
+        flex-direction: column;
+    }
+
+
 }
