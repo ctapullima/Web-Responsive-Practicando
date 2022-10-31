@@ -167,8 +167,12 @@ header {
 	font-size: 15px;
 }
 #boton-iconos {
+    display: flex;
+	justify-content: space-around;
 	text-align: center;
 	padding-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;  /* para que aparescan otros botones"saber mas */
 }
 /* FORMUKARIO */
 #contacto {
@@ -237,9 +241,10 @@ form textarea::placeholder{
 /*FOOTER */
 footer{
     background: #4d4d5c;
-    color: #cccccc4a;
+   /*  color: #cccccc4a; */
     text-align: center;
     padding: 10px 0px;
+    color: #fff;
 }
 
 /* RESPONSIVE */
