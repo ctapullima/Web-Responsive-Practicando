@@ -1,216 +1,219 @@
 /* RESET */
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 /* HEADER (tiene que pasar de responsive aun diseño normal o al reves */
 header {
-    height: 100px;
-    background: #4d4d5c;
-    padding: 0 50px;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* border: 1px solid yellow; */
+	height: 100px;
+	background: #4d4d5c;
+	padding: 0 50px;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
-
 .logo {
-    text-transform: uppercase;
-    color: #6cc091;
-    font-weight: 200;
-    /*  border: 1px solid rgb(0, 38, 255); */
+	text-transform: uppercase;
+	color: #6cc091;
+	font-weight: 200;
 }
-
 /* aqui esta los link de navegacion */
 .menu a {
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 0 10px;
-    transition: 0.4s;
-
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 0 10px;
+	transition: 0.4s;
 }
-
 .mostar-menu,
 .esconder-menu {
-    font-size: 30px;
-    cursor: pointer;
-    display: none;
-    transition: 0.4s;
-
+	font-size: 30px;
+	cursor: pointer;
+	display: none;
+	transition: 0.4s;
 }
-
 .mostar-menu {
-    order: 1;
-    /* para  que aparesca  primero el menu de hambuersa */
+	order: 1;
+	/* para  que aparesca  primero el menu de hambuersa */
 }
-
 .menu a:hover,
 .mostar-menu :hover,
 .esconder-menu :hover {
-    color: #6cc091;
+	color: #6cc091;
 }
-
 #check {
-    display: none;
+	display: none;
 }
-
 /* BANNER (se gestiona la imagen)  */
 #banner {
-    padding: 0 50PX;
-    background-image: url(./images/banner.jpg);
-    height: 45vh;
-    /* tanaño de la pantalla */
-    background-size: cover;
-    /*  sin esta muy distorsionado , lo pone nitido */
-    background-position: center;
-    /* colocar la imagen en el centro de enfocacion */
+	padding: 0 50px;
+	background-image: url(./images/banner.jpg);
+	height: 45vh; /* tanaño de la pantalla */
+	background-size: cover; /*  sin esta muy distorsionado , lo pone nitido */
+	background-position: center; /* colocar la imagen en el centro de enfocacion */
 }
-
 /* se utiliza el selector before y se coloque  grise opaco */
 #banner::before {
-    content: "";
-    background: rgba(77, 77, 92, 0.6);
-    position: absolute;
-    width: 100%;
-    height: 45vh;
-    left: 0;
-    /*  como  le falta con el cero le corta */
+	content: "";
+	background: rgba(77, 77, 92, 0.6);
+	position: absolute;
+	width: 100%;
+	height: 45vh;
+	left: 0;
+	/*  como  le falta con el cero le corta */
 }
-
 .contenido-banner {
-    position: relative;
-    color: #fff;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* la letra estaba arriba y luego se fue abajo */
+	position: relative;
+	color: #fff;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; /* la letra estaba arriba y luego se fue abajo */
 }
-
 /* SE MODIFICA LAS LETRAS */
 .contenido-banner h3 {
-    font-size: 30px;
-    font-weight: 400;
-    padding: 10px 0px;
+	font-size: 30px;
+	font-weight: 400;
+	padding: 10px 0px;
 }
-
 .contenido-banner h3 span {
-
-    font-weight: 600;
-    /* ara que las letras se vean estiradas */
+	font-weight: 600;
+	/* ara que las letras se vean estiradas */
 }
-
 /* aki me modifica la palabra Empezar */
 .boton-empezar {
-    text-decoration: none;
-    color: #fff;
-    border: 1px solid #6cc091;
-    padding: 20px 40px;
-    align-self: baseline;
-    /* ocupa lo qu3e esta dentro del contenedor , si el cuadro es grande se achica al casi tamaño de la letra */
-    transition: all 0.4s;
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid #6cc091;
+	padding: 20px 40px;
+	align-self: baseline;
+	/* ocupa lo qu3e esta dentro del contenedor , si el cuadro es grande se achica al casi tamaño de la letra */
+	transition: all 0.4s;
 }
-
 .boton-empezar:hover {
-    background: #6cc09070;
-    /* aqui se  colo las sombritas dinamicas */
+	background: #6cc09070; /* aqui se  coloco las sombritas dinamicas */
 }
-
 /* personas */
-/* esta hacienod como el padre y englova a todo */
 #personas {
-    padding: 50px 50px;
-    /*  para que la web se vea opdenada , en la mismalinea */
-    display: flex;
-    /* flex automaticamente uno al lado de otro  */
-    justify-content: center;
-    text-align: center;
+	/* esta hacienod como el padre y englova a todo */
+	padding: 50px 50px; /*  para que la web se vea ordenada , en la mismalinea */
+	display: flex; /* flex automaticamente uno al lado de otro  */
+	justify-content: center;
+	text-align: center;
 }
-
 #personas img {
-    border-radius: 100%;
+	border-radius: 100%;
 }
-
 #personas div {
-    padding: 30px 30px;
-    /* adentra la imagen */
+	padding: 30px 30px; /* adentra la imagen */
 }
-
 #personas div h4 {
-    color: #4d4d5c87;
-    font-size: 20px;
-    margin: 15px 0px;
+	color: #4d4d5c87;
+	font-size: 20px;
+	margin: 15px 0px;
 }
-
 #personas div p {
-    color: #4d4d5c87;
-    font-size: 18px;
+	color: #4d4d5c87;
+	font-size: 18px;
 }
-
 .boton-saber-mas {
-    display: inline-block;
-    text-decoration: none;
-    color: #6cc091;
-    padding: 10px 30px;
-    /* parametros  usualmente */
-    border: 3px solid #6cc091;
-    border-radius: 30px;
-    margin-top: 15px;
-    transition: all 0.4s;
+	display: inline-block;
+	text-decoration: none;
+	color: #6cc091;
+	padding: 10px 30px; /* parametros  usualmente */
+	border: 3px solid #6cc091;
+	border-radius: 30px;
+	margin-top: 15px;
+	transition: all 0.4s;
 }
-
 .boton-saber-mas:hover {
-    background: #6cc091;
-    color: #fff;
-    /*  es necesario para que cambie el color  */
+	background: #6cc091;
+	color: #fff;
+	/*  es necesario para que cambie el color  */
 }
+/* Iconos */
+#iconos {
+	padding: 0px 50px;
+	background: rgba(77, 77, 92, 0.6);
+}
+.contenido-iconos {
+	padding: 50px 50px 0px 50px;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+.contenido-iconos div {
+	flex: 1;
+	margin: 20px 0px;
+	border-right: 2px solid rgba(255, 255, 255, 0.2); /* con esta aparecen la slineas blancas */
+}
+#icono-mobile {
+	/*  se cambio a .contenido-iconos  para que se pueda utilizar #icono-mobile  */
+	border: none;
+}
+.contenido-iconos div i {
+	color: #6cc091;
+}
+.contenido-iconos div h6 {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 100;
+	margin: 10px 0px;
+}
+.contenido-iconos div p {
+	color: rgba(255, 255, 255, 0.55);
+	font-size: 15px;
+}
+#boton-iconos {
+	text-align: center;
+	padding-bottom: 50px;
+}
+/* .boton-saber-mas */
 
 /* RESPONSIVE */
-@media(max-width:768px) {
-
-    /* header */
-    .mostar-menu,
-    .esconder-menu {
-        display: block;
-    }
-
-    .menu {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #4d4d5c;
-        left: 0;
-        right: -100%;
-        top: 0;
-        text-align: center;
-        padding: 100px 0px;
-        z-index: 100;
-        transition: 0.8s;
-        /* siempre colocar un transition  mejor efecto visual */
-    }
-
-    .menu a {
-        display: block;
-        /* utilizarlo en medias queries 768( si esta en linea cambia a bloque , uno encima del otro*/
-        padding: 20px;
-    }
-
-    .esconder-menu {
-        position: absolute;
-        top: 40px;
-        right: 40px;
-    }
-
-    #check:checked ⁓ .menu {
-        right: 0;
-    }
-
-    /* PERSONAS */
-    #personas{
-        flex-direction: column;
-    }
+@media (max-width: 768px) {
+	/* header */
+	.mostar-menu,
+	.esconder-menu {
+		display: block;
+	}
+	.menu {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #4d4d5c;
+		left: 0;
+		right: -100%;
+		top: 0;
+		text-align: center;
+		padding: 100px 0px;
+		z-index: 100;
+		transition: 0.8s;
+		/* siempre colocar un transition  mejor efecto visual */
+	}
+	.menu a {
+		display: block; /* utilizarlo en medias queries 768( si esta en linea cambia a bloque uno encima del otro*/
+		padding: 20px;
+	}
+	.esconder-menu {
+		position: absolute; /* cuando llega width: 768px se escodeera */
+		top: 40px;
+		right: 40px;
+	}
+	#check:checked ⁓.menu {
+		right: 0;
+	}
+	/* PERSONAS */
+	#personas {
+		flex-direction: column; /* cuando llega a 768px se cambia todoa una columna */
+	}
+	/* iconos */
+	.contenidos.iconos {
+		flex-direction: column;
+	}
+	.contenido-iconos div {
+		border: none;
+	}
 }
